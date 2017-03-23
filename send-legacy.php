@@ -1,10 +1,6 @@
 <?php
-// stop any output buffers
-while(ob_get_level()) {
-  ob_end_flush();
-}
 header('Content-Type: text/plain');
-ini_set('html_errors', 0);
+ini_set('html_errors', 0); // disable xdebug HTML output
 
 $url  = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'];
 $url .= $_SERVER['SERVER_PORT'] == '80' ? '' : ':' . $_SERVER['SERVER_PORT'];
