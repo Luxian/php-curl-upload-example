@@ -21,7 +21,7 @@ $options = array(
 
 $ch = curl_init();
 
-// Needed for PHP > 5.5 to keep the enable behavior of uploading file.
+// Needed for PHP > 5.5 to enable the old method of uploading file.
 // Make sure to include this before CURLOPT_POSTFIELDS. If you add it to
 // $options array, it needs to be before CURLOPT_POSTFIELDS. Or you can just
 // set it like this before calling curl_setopt_array().
