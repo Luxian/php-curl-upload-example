@@ -28,7 +28,10 @@ echo "Status: "; print_r($info); echo "\n";
 echo "Content: \n" . $content;
 
 /*
-// I get this output:
+
+The output I get suggest that the upload works, 
+but it's hitting some server limit regarding file size
+
 Array
 (
     [errors] => Array
