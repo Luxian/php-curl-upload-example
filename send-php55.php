@@ -26,3 +26,26 @@ curl_close($ch);
 
 echo "Status: "; print_r($info); echo "\n";
 echo "Content: \n" . $content;
+
+/*
+// I get this output:
+Array
+(
+    [errors] => Array
+        (
+            [0] => Array
+                (
+                    [code] => 25
+                    [message] => the size of file exceeds the maximum file size cap for the current plan
+                    [context] => Array
+                        (
+                            [file_size] => 3028
+                            [maximum_file_size] => 1024
+                        )
+
+                )
+
+        )
+
+)
+*/
