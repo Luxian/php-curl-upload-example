@@ -26,29 +26,3 @@ curl_close($ch);
 
 echo "Status: "; print_r($info); echo "\n";
 echo "Content: \n" . $content;
-
-/*
-
-The output I get suggest that the upload works, 
-but it's hitting some server limit regarding file size
-
-Array
-(
-    [errors] => Array
-        (
-            [0] => Array
-                (
-                    [code] => 25
-                    [message] => the size of file exceeds the maximum file size cap for the current plan
-                    [context] => Array
-                        (
-                            [file_size] => 3028
-                            [maximum_file_size] => 1024
-                        )
-
-                )
-
-        )
-
-)
-*/
